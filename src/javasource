@@ -1,0 +1,10 @@
+import org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTestAnnotation;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.test.context.ContextConfiguration;
+@Configuration
+@ContextConfiguration(classes = { DuplicateJsonObjectContextCustomizerFactory.class,
+        WebDriverContextCustomizer.class, SpringBootTestAnnotation.class })
+public class MyConfig {
+}
